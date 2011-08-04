@@ -85,6 +85,11 @@ aka du. ud.
   : char/ 1 chars / ;
 [THEN]
 
+\ TBH, I don't understand this.  It passes the tests.  I blame the tests.
+\ And gforth.  FFL's expected fatan2 definitely isn't SwiftForth's.
+: fatan2 ( r r -- r )
+  f2dup f0< f0< and if fswap fabs fswap [fatan2] fnegate exit then [fatan2] ;
+
 ( Extension words )
 
 aka counter ms@ ( -- u = Fetch milliseconds timer )

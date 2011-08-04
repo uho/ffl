@@ -631,6 +631,11 @@ d. The test script will tell you which modules are tested and if there
 
 Tested with SwiftForth 3.3.2
 
+Fails cpx_tests.fs : complex numbers stringify slightly differently
+
+Fails fwt_test.fs : SwiftForth's ALIGN and ALIGNED are no-ops
+
+
 Configuration
 =============
 
